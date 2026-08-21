@@ -11,8 +11,7 @@
 	--multarix-text-secondary: #b8b8b8;
 	--multarix-text-muted: #858d85;
 
-	--multarix-primary-original: #07a218;
-	--multarix-primary: #d4a72c;
+	--multarix-primary: #07a218;
 	--multarix-primary-light: #19b52a;
 	--multarix-primary-dark: #057a13;
 
@@ -239,7 +238,7 @@
 	--color-red-badge-bg: #ef444422;
 	--color-red-badge-hover-bg: #ef444444;
 
-	--color-green-badge: var(--multarix-primary-original);
+	--color-green-badge: var(--multarix-primary);
 	--color-green-badge-bg: #07a21822;
 	--color-green-badge-hover-bg: #07a21844;
 
@@ -380,7 +379,7 @@
 
 	/* Caret */
 
-	--color-caret: var(--multarix-primary);
+	--color-caret: var(--color-yellow);
 
 
 	/* Reactions */
@@ -446,7 +445,7 @@
 	--color-indicator-offline: #94a094;
 	--color-indicator-offline-20: #94a0941a;
 
-	--color-indicator-idle: var(--multarix-primary);
+	--color-indicator-idle: var(--color-yellow);
 	--color-indicator-idle-20: #07a2181a;
 
 	--color-indicator-active: var(--multarix-accent);
@@ -456,29 +455,26 @@
 	color-scheme: dark;
 }
 
+
 .vch__container rect[style^="fill: var(--color-secondary-alpha-60)"] {
 	fill: #505050 !important;
 }
-
 .vch__container rect[style^="fill: var(--color-primary-light-4)"] {
 	fill: #5D4900 !important;
 }
-
 .vch__container rect[style^="fill: var(--color-primary-light-2)"] {
 	fill: #745B00 !important;
 }
-
 .vch__container rect[style^="fill: var(--color-primary)"] {
 	fill: #A27F00 !important;
 }
-
 .vch__container rect[style^="fill: var(--color-primary-dark-2)"] {
 	fill: #D1A400 !important;
 }
-
 .vch__container rect[style^="fill: var(--color-primary-dark-4)"] {
 	fill: #FFC800 !important;
 }
+
 
 input,
 textarea,
@@ -503,6 +499,7 @@ textarea,
 	border-color: var(--color-primary-light-1) !important;
 }
 
+
 .ui.selection.visible.dropdown > .text:not(.default) {
 	color: #555;
 }
@@ -513,7 +510,6 @@ textarea,
 .ui.selection.dropdown .menu > .item:hover {
 	background-color: #d0d0d0;
 }
-
 .ui.selection.dropdown .menu > .item.selected {
 	background-color: #e0f0e0;
 }
@@ -521,16 +517,17 @@ textarea,
 	background-color: #d0e0d0;
 }
 
+
 input[type="file"]{
 	cursor: pointer;
 }
-
 input[type="file"]::file-selector-button {
 	border: 1px solid var(--color-primary-dark-7);
 	color: #000;
 	background: var(--color-light);
 	padding: 2px 5px; 
 }
+
 
 input:autofill,
 input:autofill:focus,
@@ -544,6 +541,7 @@ input:autofill:active,
   	box-shadow: 0 0 0 100px var(--color-primary-light-7) inset !important;
 	border-color: var(--color-primary-light-4) !important
 }
+
 
 .ui.primary.labels .label, .ui.ui.ui.primary.label, .ui.primary.button, .ui.primary.buttons .button, .primary.button {
 	background: var(--color-primary-light-1) !important;
@@ -566,7 +564,6 @@ input:autofill:active,
 .ui.secondary.pointing.menu .active.item:hover {
 	background-color: var(--color-primary-active);
 }
-
 .ui.secondary.pointing.menu a.item:last-child {
 	margin-left: unset !important;
 	border-radius: 0 .28571429rem .28571429rem 0 !important;
@@ -576,7 +573,19 @@ input:autofill:active,
 #tippy-2 .tippy-content {
 	color: var(--color-text) !important;
 }
-
 .form .help {
 	color: var(--color-text) !important;
+}
+
+
+a,
+a:hover,
+a.suppressed:hover,
+a.muted:hover,
+a.muted:hover [class*="color-text"],
+.muted-links a:hover,
+.text.primary,
+.flex-item a:not(.label, .button),
+.flex-item a:not(.label, .button):hover {
+	color: var(--color-yellow);
 }
