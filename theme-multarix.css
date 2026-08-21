@@ -480,10 +480,56 @@
     fill: #FFC800 !important;
 }
 
-input, input[type="text"] {
+input,
+textarea,
+.ui.input > input,
+.ui.form input:not([type]),
+.ui.form select,
+.ui.form textarea,
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="file"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="text"],
+.ui.form input[type="time"],
+.ui.form input[type="url"],
+.ui.selection.dropdown {
 	background-color: #e0e0e0 !important;
 	color: #000000 !important;
     border-color: var(--color-primary-light-1) !important;
+}
+
+.ui.selection.visible.dropdown > .text:not(.default) {
+	color: #555;
+}
+.ui.selection.dropdown .menu > .item {
+    color: #000;
+	background-color: #e0e0e0;
+}
+.ui.selection.dropdown .menu > .item:hover {
+	background-color: #d0d0d0;
+}
+
+.ui.selection.dropdown .menu > .item.selected {
+	background-color: #e0f0e0;
+}
+.ui.selection.dropdown .menu > .item.selected:hover {
+	background-color: #d0e0d0;
+}
+
+input[type="file"]{
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+	border: 1px solid var(--color-primary-dark-7);
+	color: #000;
+	background: var(--color-light);
+    padding: 2px 5px; 
 }
 
 input:autofill,
@@ -499,9 +545,14 @@ input:autofill:active,
 	border-color: var(--color-primary-light-4) !important
 }
 
-.ui.primary.labels .label, .ui.ui.ui.primary.label, .ui.primary.button, .ui.primary.buttons .button {
+.ui.primary.labels .label, .ui.ui.ui.primary.label, .ui.primary.button, .ui.primary.buttons .button, .primary.button {
 	background: var(--color-primary-light-1) !important;
 }
+
+.ui.primary.button:hover, .ui.primary.buttons .button:hover, .primary.button:hover {
+	background: var(--color-primary-dark-1) !important;
+}
+
 
 #tippy-2 .tippy-content {
 	color: var(--color-text) !important;
