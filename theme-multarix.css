@@ -11,7 +11,7 @@
 	--multarix-text-secondary: #b8b8b8;
 	--multarix-text-muted: #858d85;
 
-	--multarix-primary-orignal: #07a218;
+	--multarix-primary-original: #07a218;
 	--multarix-primary: #d4a72c;
 	--multarix-primary-light: #19b52a;
 	--multarix-primary-dark: #057a13;
@@ -239,7 +239,7 @@
 	--color-red-badge-bg: #ef444422;
 	--color-red-badge-hover-bg: #ef444444;
 
-	--color-green-badge: var(--multarix-primary);
+	--color-green-badge: var(--multarix-primary-original);
 	--color-green-badge-bg: #07a21822;
 	--color-green-badge-hover-bg: #07a21844;
 
