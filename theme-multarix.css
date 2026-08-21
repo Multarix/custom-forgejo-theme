@@ -12,9 +12,9 @@
 	 * Multarix palette
 	 */
 
-	--multarix-bg: #0f140f;
+	--multarix-bg: #151a15;
 	--multarix-bg-secondary: #152915;
-	--multarix-bg-tertiary: #1e291f;
+	--multarix-bg-tertiary: #243a26;
 
 	--multarix-text: #ebebeb;
 	--multarix-text-secondary: #b8b8b8;
@@ -295,7 +295,7 @@
 	--color-text-light-2: #a8afa8;
 	--color-text-light-3: #94a094;
 
-	--color-footer: #0a0e0a;
+	--color-footer: var(--color-nav-bg);
 	--color-timeline: var(--multarix-secondary);
 
 
