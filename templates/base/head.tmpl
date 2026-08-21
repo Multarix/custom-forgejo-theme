@@ -22,6 +22,9 @@
 	{{if and FederationEnabled .PageIsUserProfile .ContextUser .ContextUser.IsIndividual}}
 		<link rel="alternate" type="application/activity+json" href="{{.ContextUser.APActorID}}">
 	{{end}}
+	
+	<link rel="preload" href="/assets/fonts/FiraCode-Regular.ttf" as="font" type="font/ttf" crossorigin>
+	
 	{{template "base/head_script" .}}
 	{{template "shared/user/mention_highlight" .}}
 	{{template "base/head_opengraph" .}}
