@@ -587,7 +587,8 @@ input:autofill:active,
 }
 
 
-a,
+a { color: var(--color-yellow); }
+
 a:hover,
 a.suppressed:hover,
 a.muted:hover,
@@ -596,7 +597,7 @@ a.muted:hover [class*="color-text"],
 .text.primary,
 .flex-item a:not(.label, .button),
 .flex-item a:not(.label, .button):hover {
-	color: var(--color-yellow);
+	color: var(--color-yellow) !important;
 }
 
 
@@ -604,7 +605,9 @@ a.muted:hover [class*="color-text"],
 	margin-bottom: 1rem;
 }
 
-.repo-buttons {
+.repo-buttons,
+a[aria-label*="stars"],
+a[aria-label*="forks"] {
 	display: none !important;
 }
 
