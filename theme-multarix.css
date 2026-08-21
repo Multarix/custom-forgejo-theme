@@ -480,9 +480,10 @@
     fill: #FFC800 !important;
 }
 
-input[type="text"] {
-	background-color: #ffffff !important;
+input, input[type="text"] {
+	background-color: #e0e0e0 !important;
 	color: #000000 !important;
+    border-color: var(--color-primary-light-1) !important;
 }
 
 input:autofill,
