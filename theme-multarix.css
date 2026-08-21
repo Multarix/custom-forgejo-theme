@@ -589,3 +589,20 @@ a.muted:hover [class*="color-text"],
 .flex-item a:not(.label, .button):hover {
 	color: var(--color-yellow);
 }
+
+
+.repo-header {
+	margin-bottom: 1rem;
+}
+
+.repo-buttons {
+	display: none !important;
+}
+
+
+.repository.file.list #repo-files-table tbody.svg.octicon-cross-reference,
+.repository.file.list #repo-files-table tbody .svg.octicon-file,
+.repository.file.list #repo-files-table tbody .svg.octicon-file-symlink-file,
+.repository.file.list #repo-files-table tbody .svg.octicon-file-directory-symlink {
+	color: var(--color-ansi-white);
+}
