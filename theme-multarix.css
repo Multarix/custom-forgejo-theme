@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url("/assets/fonts/FiraCode-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+
 :root {
 	/*
 	 * Multarix palette
@@ -605,4 +614,158 @@ a.muted:hover [class*="color-text"],
 .repository.file.list #repo-files-table tbody .svg.octicon-file-symlink-file,
 .repository.file.list #repo-files-table tbody .svg.octicon-file-directory-symlink {
 	color: var(--color-ansi-white);
+}
+
+
+/* =========================================================
+ * Dark Modern — syntax highlighting
+ * Based on the VS Code Dark Modern colour palette
+ * ========================================================= */
+
+.chroma {
+    color: #d4d4d4;
+    background-color: #1f1f1f;
+}
+
+/* Keywords: const, let, function, return, etc. */
+.chroma .k {
+	color: #c086c0 !important;
+}
+
+.chroma .kr,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kt {
+    color: #569cd6 !important;
+}
+
+/* Variables / identifiers */
+.chroma .n,
+.chroma .na,
+.chroma .nb,
+.chroma .nc,
+.chroma .nd,
+.chroma .ne,
+.chroma .nf,
+.chroma .ni,
+.chroma .nl,
+.chroma .nn,
+.chroma .no,
+.chroma .nt,
+.chroma .nx,
+.chroma .py {
+    color: #9cdcfe !important;
+}
+
+/* Function names */
+.chroma .nf,
+.chroma .fm {
+    color: #dcdcaa !important;
+}
+
+/* Punctuation & Operators */
+.chroma .o,
+.chroma .ow,
+.chroma .p {
+    color: #d4d4d4 !important;
+}
+
+/* Strings */
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s1,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sr,
+.chroma .ss {
+    color: #ce9178 !important;
+}
+
+/* Numbers */
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .mo,
+.chroma .il {
+    color: #b5cea8 !important;
+}
+
+/* Comments */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+    color: #6a9955 !important;
+}
+
+/* Constants / literals */
+.chroma .l,
+.chroma .ld {
+    color: #569cd6 !important;
+}
+
+/* Built-ins */
+.chroma .bp,
+.chroma .nb {
+    color: #4ec9b0 !important;
+}
+
+/* Types / classes */
+.chroma .nc,
+.chroma .nn {
+    color: #4ec9b0 !important;
+}
+
+/* Attributes */
+.chroma .na {
+    color: #9cdcfe !important;
+}
+
+/* Decorators / annotations */
+.chroma .nd {
+    color: #dcdcaa !important;
+}
+
+/* Regex */
+.chroma .sr {
+    color: #d16969 !important;
+}
+
+/* Errors */
+.chroma .err {
+    color: #f44747 !important;
+}
+
+/* Deleted / inserted diff syntax */
+.chroma .gd {
+    color: #f44747 !important;
+}
+
+.chroma .gi {
+    color: #b5cea8 !important;
+}
+
+.file-view.code-view code.code-inner {
+	background: #1f1f1f;
+	font-family: "Fira Code", monospace !important;
+    font-variant-ligatures: contextual;
+}
+
+.file-view.code-view table tr:first-child td {
+    padding-top: 8px;
+}
+.file-view.code-view table tr:last-child td {
+    padding-bottom: 8px;
 }
