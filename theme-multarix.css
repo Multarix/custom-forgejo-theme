@@ -505,3 +505,7 @@ input:autofill:active,
 #tippy-2 .tippy-content {
 	color: var(--color-text) !important;
 }
+
+.form .help {
+    color: var(--color-text) !important;
+}
