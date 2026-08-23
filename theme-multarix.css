@@ -118,6 +118,10 @@
 	--color-warning-text: var(--multarix-text);
 	--color-warning-border: #fbab45;
 	
+	--color-info-bg: #7b2957;
+	--color-info-text: var(--multarix-text);
+	--color-info-border: #fb45ab;
+	
 	--color-selection-bg: none;
 	--color-selection-fg: none;
 	
