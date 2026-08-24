@@ -470,6 +470,6 @@ pre.code-block,
 table th {
 	background: var(--color-box-header);
 }
-table tr:nth-child(even) td {
+table:not(.file-view.code-view > table) tr:nth-child(even) td {
 	background-color: color-mix(in srgb, currentColor 10%, #111);
 }
