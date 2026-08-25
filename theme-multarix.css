@@ -14,7 +14,7 @@
 	--multarix-bg-secondary: #252525;
 	--multarix-bg-accent: #283f28;
 	
-	--multarix-code-bg: #1f1f1f;
+	--multarix-code-bg: #1A1A1A;
 	
 	--multarix-navbar-bg: #1F2F1F;
 	--multarix-navbar-bg-secondary: #172217;
@@ -121,6 +121,10 @@
 	--color-info-bg: #7b2957;
 	--color-info-text: var(--multarix-text);
 	--color-info-border: #fb45ab;
+	
+	--color-error-bg: #7b2929;
+	--color-error-text: var(--multarix-text);
+	--color-error-border: #fb4545;
 	
 	--color-selection-bg: none;
 	--color-selection-fg: none;
@@ -298,7 +302,7 @@ a[aria-label*="forks"] {
 
 .chroma {
     color: #d4d4d4;
-    background-color: #1f1f1f;
+    background-color: var(--multarix-code-bg);
 }
 
 /* Keywords: const, let, function, return, etc. */
@@ -461,6 +465,11 @@ pre.code-block,
 
 .page-content {
 	padding-bottom: 1em;
+}
+
+.markup code {
+	font-family: "Fira Code", monospace !important;
+    font-variant-ligatures: contextual;
 }
 
 .markup .code-copy:hover {
