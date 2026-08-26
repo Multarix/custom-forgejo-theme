@@ -71,7 +71,7 @@
 	--color-primary-dark-7: #022c07;
 	
 	--color-secondary-dark-2: var(--color-primary-light-2);
-
+	
 	--color-primary-light-1: #32BD40;
 	--color-primary-light-2: #4AC656;
 	--color-primary-light-3: #63CE6C;
@@ -79,7 +79,10 @@
 	--color-primary-light-5: #94DF98;
 	--color-primary-light-6: #ACE8AE;
 	--color-primary-light-7: #c5f0c4;
-
+	
+	--color-red: #fb4545;
+	--color-red-dark-1: #7b2929;
+	
 	--color-primary-hover: var(--multarix-primary-light);
 	--color-primary-active: var(--multarix-primary-dark);
 	--color-active: var(--multarix-primary-dark);
@@ -122,9 +125,10 @@
 	--color-info-text: var(--multarix-text);
 	--color-info-border: #fb45ab;
 	
-	--color-error-bg: #7b2929;
+	--color-error-bg: var(--color-red-dark-1);
 	--color-error-text: var(--multarix-text);
-	--color-error-border: #fb4545;
+	--color-error-border: var(--color-red);
+	
 	
 	--color-selection-bg: none;
 	--color-selection-fg: none;
@@ -482,3 +486,13 @@ table th {
 table:not(.file-view.code-view > table) tr:nth-child(even) td {
 	background-color: color-mix(in srgb, currentColor 10%, #111);
 }
+
+.ui.basic.primary.buttons .button:hover,
+.ui.basic.primary.button:hover,
+.ui.basic.primary.buttons .button:focus,
+.ui.basic.primary.button:focus,
+.ui.basic.primary.buttons .button,
+.ui.basic.primary.button {
+	color: var(--color-text);
+}
+
