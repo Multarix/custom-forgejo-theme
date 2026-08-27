@@ -21,7 +21,7 @@
 	--multarix-navbar-border: #0E211B;
 
 	--multarix-text: #f5f5f5;
-	--multarix-text-secondary: #b9b9b9;
+	--multarix-text-secondary: #bbb;
 	--multarix-text-muted: #828282;
 
 	--multarix-primary-light: #19B52A;
@@ -151,10 +151,12 @@
 }
 
 
-/* =========================================================
+/*
+=========================================================
  * Dark Modern — syntax highlighting
  * Based on the VS Code Dark Modern colour palette
- * ========================================================= */
+=========================================================
+*/
 
 .chroma {
     color: #d4d4d4;
@@ -303,11 +305,16 @@ pre.code-block,
 }
 
 
-
-/* UI Tweaks */
+/*
+=========================================================
+ * UI Tweaks
+ * Based on github & personal preferences
+=========================================================
+*/
 .file-view.code-view table tr:first-child td {
     padding-top: 8px;
 }
+
 .file-view.code-view table tr:last-child td {
     padding-bottom: 8px;
 }
@@ -351,8 +358,6 @@ table:not(.file-view.code-view > table) tr:nth-child(even) td {
 	color: var(--color-text);
 }
 
-
-
 .ui.container:has(.repo-header),
 overflow-menu.ui.container,
 .page-content.repository.file.list .ui.container:not(.fluid):has(.file-view.code-view) {
@@ -363,18 +368,23 @@ overflow-menu.ui.container,
 .vch__container rect[style^="fill: var(--color-secondary-alpha-60)"] {
 	fill: #505050 !important;
 }
+
 .vch__container rect[style^="fill: var(--color-primary-light-4)"] {
 	fill: #5D4900 !important;
 }
+
 .vch__container rect[style^="fill: var(--color-primary-light-2)"] {
 	fill: #745B00 !important;
 }
+
 .vch__container rect[style^="fill: var(--color-primary)"] {
 	fill: #A27F00 !important;
 }
+
 .vch__container rect[style^="fill: var(--color-primary-dark-2)"] {
 	fill: #D1A400 !important;
 }
+
 .vch__container rect[style^="fill: var(--color-primary-dark-4)"] {
 	fill: #FFC800 !important;
 }
@@ -407,16 +417,20 @@ textarea,
 .ui.selection.visible.dropdown > .text:not(.default) {
 	color: #555;
 }
+
 .ui.selection.dropdown .menu > .item {
 	color: #000;
 	background-color: #e0e0e0;
 }
+
 .ui.selection.dropdown .menu > .item:hover {
 	background-color: #d0d0d0;
 }
+
 .ui.selection.dropdown .menu > .item.selected {
 	background-color: #e0f0e0;
 }
+
 .ui.selection.dropdown .menu > .item.selected:hover {
 	background-color: #d0e0d0;
 }
@@ -446,7 +460,6 @@ input:autofill:active,
 	border-color: var(--color-primary-light-4) !important
 }
 
-
 .ui.primary.labels .label, .ui.ui.ui.primary.label, .ui.primary.button, .ui.primary.buttons .button, .primary.button {
 	background: var(--color-primary) !important;
 }
@@ -455,16 +468,18 @@ input:autofill:active,
 	background: var(--color-primary-dark-1) !important;
 }
 
-
 .ui.secondary.pointing.menu a.item {
 	background-color: var(--multarix-navbar-bg-secondary);
 }
+
 .ui.secondary.pointing.menu a.item:hover {
 	background-color: var(--color-primary-dark-6);
 }
+
 .ui.secondary.pointing.menu .active.item {
 	background-color: var(--color-primary-active) !important;
 }
+
 .ui.secondary.pointing.menu .active.item:hover {
 	background-color: var(--color-primary-active);
 }
@@ -474,20 +489,20 @@ input:autofill:active,
 	border-radius: none;
 	border-top-left-radius: .3rem !important;
 }
+
 .ui.secondary.pointing.menu a.item:last-child {
 	margin-left: unset !important;
 	border-radius: none;
 	border-top-right-radius: .3rem !important;
 }
 
-
 #tippy-2 .tippy-content {
 	color: var(--color-text) !important;
 }
+
 .form .help {
 	color: var(--color-text) !important;
 }
-
 
 a { color: var(--multarix-accent); }
 
@@ -502,7 +517,6 @@ a.muted:hover [class*="color-text"],
 	color: var(--multarix-accent) !important;
 }
 
-
 .repo-header {
 	margin-bottom: 1rem;
 }
@@ -513,10 +527,10 @@ a[aria-label*="forks"] {
 	display: none !important;
 }
 
+.repository.file.list #repo-files-table tbody .svg {
+	margin-right: 1em !important;
+}
 
-.repository.file.list #repo-files-table tbody.svg.octicon-cross-reference,
-.repository.file.list #repo-files-table tbody .svg.octicon-file,
-.repository.file.list #repo-files-table tbody .svg.octicon-file-symlink-file,
-.repository.file.list #repo-files-table tbody .svg.octicon-file-directory-symlink {
-	color: var(--color-text);
+.repository.file.list #repo-files-table tbody .svg.octicon-file {
+	color: color-mix(in srgb, var(--multarix-text-secondary) 80%, var(--multarix-accent));
 }
