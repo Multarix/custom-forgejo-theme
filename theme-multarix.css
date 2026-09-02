@@ -333,6 +333,11 @@ pre.code-block,
 	padding-bottom: 1em;
 }
 
+.markup:not(.markdown) {
+	background-color: var(--color-markup-code-inline);
+	border-radius: var(--border-radius);
+}
+
 .markup code {
 	font-family: "Fira Code", monospace !important;
     font-variant-ligatures: contextual;
@@ -533,4 +538,8 @@ a[aria-label*="forks"] {
 
 .repository.file.list #repo-files-table tbody .svg.octicon-file {
 	color: color-mix(in srgb, var(--multarix-text-secondary) 80%, var(--multarix-accent));
+}
+
+#transfer-repo-modal .text.red {
+	color: var(--multarix-accent) !important;
 }
